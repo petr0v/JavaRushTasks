@@ -1,0 +1,13 @@
+﻿#############
+## Idea
+#############
+target/
+out/
+**/lib
+.idea/
+.idea
+.repository/
+*.iml
+*.log
+JavaRushPlugin.properties
+
