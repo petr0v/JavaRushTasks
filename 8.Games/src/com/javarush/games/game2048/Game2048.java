@@ -79,4 +79,5 @@ public class Game2048 extends Game {
             setCellValueEx(x, y, getColorByValue(value),  String.valueOf(value));
         }
     }
+    private boolean compressRow(int[] row){}
 }
