@@ -23,7 +23,7 @@ public class Game2048 extends Game {
     private void drawScene() {
         for (int i = 0; i < SIDE; i++) {
             for (int j = 0; j < SIDE; j++) {
-                setCellColoredNumber(i, j, gameField[i][j]);
+                setCellColoredNumber(j, i, gameField[i][j]);
 
             }
         }
@@ -74,9 +74,9 @@ public class Game2048 extends Game {
 
     private void setCellColoredNumber(int x, int y, int value) {
         if (value == 0)
-            setCellValueEx(y, x, getColorByValue(value), "");
+            setCellValueEx(x, y, getColorByValue(value), "");
         else {
-            setCellValueEx(y, x, getColorByValue(value),  String.valueOf(value));
+            setCellValueEx(x, y, getColorByValue(value),  String.valueOf(value));
         }
     }
 }
